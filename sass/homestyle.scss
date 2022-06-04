@@ -69,6 +69,7 @@
     #{&}__figcaption__paragraphgirls{
         color: rgb(223, 158, 169);
         font-weight: 600;
+
     }
 
     #{&}__figcaption__paragraphboys{
@@ -80,6 +81,36 @@
         color: black;
         font-weight: 600;
     }
+
+    #{&}__figcaption__anotherButtonRandomGirls{
+        background-color: pink;
+        width: 100px;
+        height: 20px;
+        color: white;
+    }
+
+    #{&}__figcaption__anotherButtonRandomBoys{
+        background-color: blue;
+        width: 100px;
+        height: 20px;
+        color: white;
+    }
+
+    #{&}__figcaption__anotherButtonRandom{
+        background-color: black;
+        width: 100px;
+        height: 20px;
+        color: white;
+    }
+
+
+
+
+
+
+
+
+
     //can delete
     #{&}__colored{
         margin: 100px 0 0 0;
