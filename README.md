@@ -21,7 +21,7 @@ And here some of my goals:
 - flex Box
 - Responsive design
 
-## JAVSCRIPT
+## JAVASCRIPT
 
 - Syntax
 - DOM Manipulation
