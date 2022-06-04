@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,+FAAI,CACZ,AAAA,CAAC,AAAA,CACG,UAAU,CAAE,UAAU,CACtB,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CACV,WAAW,CAAE,uBAAuB,CACvC,ADJD,AAAA,IAAI,AAAA,CACA,gBAAgB,CAAE,OAAO,CAC5B,AAED,AAAA,QAAQ,AAAA,CACJ,MAAM,CAAE,MAAM,CAKjB,AAND,AAGI,QAHI,CAGJ,mBAAmB,AAAJ,CACX,KAAK,CAAE,KAAK,CACf",
+    "sources": [
+        "../../sass/homestyle.scss",
+        "../../sass/_resets.scss"
+    ],
+    "names": [],
+    "file": "homestyle.min.css"
+}

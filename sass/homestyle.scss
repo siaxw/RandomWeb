@@ -1,0 +1,13 @@
+@import "./resets"; 
+
+body{
+    background-color: #ffffff;
+}
+
+.header1{
+    margin: 10px 0;
+
+    #{&}__paragraph{
+        color: green;
+    }
+}
