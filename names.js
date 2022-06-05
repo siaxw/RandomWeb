@@ -1,4 +1,4 @@
-export let girlsName = [
+export const girlsName = [
     "Chloe",
     "Emily",
     "Emma",
@@ -51,7 +51,7 @@ export let girlsName = [
     "Madison"
 ];
 
-export let boysName = [
+export const boysName = [
     "Jacob",
     "Michael",
     "Aaron",
