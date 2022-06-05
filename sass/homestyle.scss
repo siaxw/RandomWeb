@@ -106,53 +106,6 @@
         color: white;
     }
 
-
-
-
-
-
-
-
-
-
-    /*can delete
-    #{&}__colored{
-        margin: 100px 0 0 0;
-        background-color: #000;
-        line-height: 1;
-        display: grid;
-        place-items: center;
-    }
-
-    #{&}__colored__header1{
-        font-size: sans-serif;
-        font-size: 15vw;
-        font-weight: 900;
-        width: -webkit-min-content;
-        width: -moz-min-content;
-        width: min-content;
-        margin: auto;
-        text-transform: uppercase;
-        background: linear-gradient(219deg, 
-  $color-1 19%, 
-  transparent 19%,transparent 20%, 
-  $color-2 20%, $color-2  39%,
-  transparent 39%,transparent 40%, 
-  $color-3 40%,$color-3 59% ,
-  transparent 59%,transparent 60%, 
-  $color-4 60%, $color-4 79%,
-  transparent 79%, transparent 80%, 
-  $color-5 80%);
-/* обрезаем фон по контуру букв */
-//background-clip: text;
-//-webkit-background-clip: text;
-
-/* делаем заголовок прозрачным, чтобы был виден цветной фон */
-//color: transparent;
- //   }
-
-
-
 }
 
 .footer{
