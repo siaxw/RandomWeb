@@ -1,29 +1,4 @@
-const girlsName = [
-    "Maria",
-    "Janna",
-    "Kamilla",
-    "Inna",
-    "Mika",
-    "Shadi",
-    "Lili",
-    "Lisa",
-    "Slovenia",
-    "Mahbuba"
-];
-
-const boysName = [
-    "Islom",
-    "Munis",
-    "Usmon",
-    "Rahim",
-    "Kodir",
-    "Mansur",
-    "Aziz",
-    "Karim",
-    "Ozod",
-    "Shahrom"
-];
-
+import { boysName, girlsName } from './names.js';
 
 let randomGirlsName = document.getElementById('randomGirlsName');
 let randomGirlsNameArray = girlsName[Math.floor(Math.random() * girlsName.length)];

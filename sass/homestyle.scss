@@ -2,16 +2,21 @@
 @import "./variables";
 
 .header{
+    position: sticky;
+    position: -webkit-sticky;
     display: flex;
     background: #000000;
     max-width: 200vh;
     width: 100%;
     color: $text-color;
     height: auto;
+    
 
     #{&}__logo{
         color: $text-color;
         padding: 10px;
+        user-select: none;
+        cursor: pointer;
     }
 
     #{&}__search{
@@ -111,7 +116,7 @@
 
 
 
-    //can delete
+    /*can delete
     #{&}__colored{
         margin: 100px 0 0 0;
         background-color: #000;
@@ -140,11 +145,33 @@
   transparent 79%, transparent 80%, 
   $color-5 80%);
 /* обрезаем фон по контуру букв */
-background-clip: text;
--webkit-background-clip: text;
+//background-clip: text;
+//-webkit-background-clip: text;
 
 /* делаем заголовок прозрачным, чтобы был виден цветной фон */
-color: transparent;
-    }
+//color: transparent;
+ //   }
 
+
+
+}
+
+.footer{
+    background: black;
+    color: white;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    max-height: 15%;
+
+    #{&}__header{
+        border: 1px solid white;
+        margin-right: 15px;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        width: 100%;
+        position: absolute;
+    }
 }
