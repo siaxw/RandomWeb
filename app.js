@@ -39,3 +39,20 @@ randomButton.addEventListener('click', () =>{
 })
 
 // Radio buttons JS
+/*
+const showOut = document.getElementById('showOutput');
+const btn = document.querySelector('#btn');
+const radioButtons = document.querySelectorAll('input[name="size"]');
+
+btn.addEventListener('click', () =>{
+    let selectedSize;
+    for (const radioButton of radioButtons){
+        if (radioButton.checked){
+            selectedSize = radioButton.value;
+            break;
+        }
+    }
+    // show the output 
+    showOut.innerText = selectedSize ? `You selected ${selectedSize}` : `You haven't selected any size`;
+});
+*/
