@@ -39,25 +39,42 @@ randomButton.addEventListener('click', () =>{
 })
 
 // Radio buttons JS
-const btnGender = document.getElementById('genderBtn');
+const genderBtn = document.getElementById('genderBtn');
 const radioButtons = document.querySelectorAll('input[name="gender"]');
-const showOutGender = document.getElementById('showgender');
+const showOut = document.getElementById('showgender');
+
+genderBtn.addEventListener('click', () =>{
+    let selectedGender;
+    for(const radioButton of radioButtons){
+        if(radioButton.value == "Boy"){
+            return showOut.innerHTML = randomBoysNameArray;
+        }else if(radioButton.value == "Girl"){
+            return showOut.innerHTML = randomGirlsNameArray;
+        }else{
+            return mixNameArray;
+        }
+    }
+})
+
+
+
+
+
+
 
 
 
 /*
-const btnGender = document.getElementById('btnGender');
-const radioButtons = document.querySelectorAll('input[name="gender"]');
-const showOut = document.getElementById('gender0Paragraph');
-
-btnGender.addEventListener('click', () => {
+genderBtn.addEventListener('click', () =>{
     let selectedGender;
     for(const radioButton of radioButtons){
-        if (radioButton.checked){
+        if(radioButton.checked){
             selectedGender = radioButton.value;
             break;
         }
     }
-    showOut.innerText = selectedGender ? `${selectedGender}` : `You haven't selected any size`;
+    showOut.innerText = selectedGender ? `${selectedGender}` : `You havent selected any gender`;
 })
+
+
 */
