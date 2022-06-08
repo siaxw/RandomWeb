@@ -54,62 +54,78 @@
 
 }
 
-/*
+
 .main{
     margin: 30px 20px 10px 20px;
     padding: 5px;
     width: 80%;
     height: auto;
 
-    #{&}__header2{
-        margin: 7px 0;
+    #{&}__section0__header2{
+        padding: 3px;
     }
 
-    #{&}__namesparagraph{
-        margin: 10px 0 5px 0;
-        padding: 5px;
+    #{&}__section0__paragraph{
+        padding: 3px;
     }
 
-    #{&}__figcaption__paragraphgirls{
-        color: rgb(223, 158, 169);
-        font-weight: 600;
-
+    #{&}__section1{
+        padding: 3px;
     }
 
-    #{&}__figcaption__paragraphboys{
-        color: blue;
-        font-weight: 600;
+    #{&}__section1__paragragraph__girls{
+        font-weight: bold;
+        color: pink;
+        margin: 10px;
     }
 
-    #{&}__figcaption__paragraphrandom{
-        color: black;
-        font-weight: 600;
-    }
-
-    #{&}__figcaption__anotherButtonRandomGirls{
+    #{&}__section1__anotherButtonRandomGirls{
+        width: 90px;
+        height: 25px;
+        border: 3px solid black;
+        color: white;
         background-color: pink;
-        width: 100px;
-        height: 20px;
-        color: white;
+        border-radius: 7px;
+        font-size: 15px;
+        font-weight: bold;
     }
 
-    #{&}__figcaption__anotherButtonRandomBoys{
+    #{&}__section1__paragraph__boys{
+        color: blue;
+        font-weight: bold;
+        margin: 10px;
+    }
+
+    #{&}__section1__anotherButtonRandomBoys{
+        width: 90px;
+        height: 25px;
+        border: 3px solid black;
+        color: white;
         background-color: blue;
-        width: 100px;
-        height: 20px;
-        color: white;
+        border-radius: 7px;
+        font-size: 15px;
+        font-weight: bold;
     }
 
-    #{&}__figcaption__anotherButtonRandom{
-        background-color: black;
-        width: 100px;
-        height: 20px;
-        color: white;
+    #{&}__section1__paragraphrandom{
+        color: black;
+        font-weight: bold;
+        margin: 10px;
     }
 
+    #{&}__section1__anotherButtonRandom{
+        width: 90px;
+        height: 25px;
+        border: 3px solid black;
+        color: white;
+        background-color:black;
+        border-radius: 7px;
+        font-size: 15px;
+        font-weight: bold;
+    }
 }
 
-*/
+
 
 .footer{
     background: black;
