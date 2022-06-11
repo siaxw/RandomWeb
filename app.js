@@ -44,25 +44,16 @@ const radioButtons = document.querySelectorAll('input[name="gender"]');
 const showOut = document.getElementById('showgender');
 
 genderBtn.addEventListener('click', () =>{
-    let selectedGender;
     for(const radioButton of radioButtons){
         if(radioButton.value == "Boy"){
             return showOut.innerHTML = randomBoysNameArray;
-        }else if(radioButton.value == "Girl"){
+        }else if(radioButton.value === "Girl"){
             return showOut.innerHTML = randomGirlsNameArray;
         }else{
-            return mixNameArray;
+            return showOut.innerHTML = randomNameArray;
         }
     }
 })
-
-
-
-
-
-
-
-
 
 /*
 genderBtn.addEventListener('click', () =>{
@@ -75,6 +66,4 @@ genderBtn.addEventListener('click', () =>{
     }
     showOut.innerText = selectedGender ? `${selectedGender}` : `You havent selected any gender`;
 })
-
-
 */
