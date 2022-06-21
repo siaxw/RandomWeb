@@ -1,4 +1,4 @@
-const girlsNames = [
+export const girlsNames = [
     "Chloe",
     "Emily",
     "Emma",
@@ -51,6 +51,4 @@ const girlsNames = [
     "Madison"
 ];
 
-const boysNames = [
 
-];

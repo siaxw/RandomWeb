@@ -1,4 +1,4 @@
-const boysNames = [
+export const boysNames = [
     "Jacob",
     "Michael",
     "Aaron",
@@ -50,3 +50,6 @@ const boysNames = [
     "Muhammad",
     "Angel"
 ];
+
+
+
