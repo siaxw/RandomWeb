@@ -8,6 +8,11 @@
 	font-family: "Roboto", sans-serif;
 }
 
+:root {
+	--prime-color: #003885;
+	--prime-colorG: #ff69b4;
+}
+
 .header {
 	padding: 5px;
 	margin: 2px;
@@ -22,24 +27,32 @@
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+.header__logo strong {
+	color: var(--prime-color);
+}
+
+.header__logo strong:first-child {
+	color: var(--prime-colorG);
+}
+
 .header__form .form__search {
-	border: 3px solid blue;
+	border: 3px solid var(--prime-color);
 	border-radius: 15px;
 	width: 200px;
-	padding: 3px;
+	padding: 4px;
 }
 
 .header__form .form__submit {
 	border: 3px solid black;
 	border-radius: 15px;
 	width: 100px;
-	background: blue;
+	background: var(--prime-color);
 	color: white;
 	padding: 3px;
 }
 
 .navbar {
-	background: black;
+	background: var(--prime-color);
 }
 
 .navbar .navbar__list {
@@ -57,4 +70,20 @@
 	color: black;
 	background: white;
 	padding: 4px;
+}
+
+.main {
+	padding: 10px;
+}
+
+.main .main__section {
+	margin: 10px;
+}
+
+aside a:first-child {
+	color: var(--prime-color);
+}
+
+aside a {
+	color: var(--prime-colorG);
 }
