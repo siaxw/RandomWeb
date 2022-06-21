@@ -1,6 +1,6 @@
 import { boysNames } from "./bnames.js";
 import { girlsNames } from "./gnames.js";
 
-console.log(boysNames[0]);
-
+const rGirlsName = document.getElementById('randomGirlsName');
+const rGirlsNameBtn = document.getElementById('girlsAnotherBtn');
 
