@@ -87,3 +87,11 @@ aside a:first-child {
 aside a {
 	color: var(--prime-colorG);
 }
+
+.section__table {
+	width: 45%;
+}
+
+.table__item {
+	padding: 5px;
+}
