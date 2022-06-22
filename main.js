@@ -28,3 +28,17 @@ randomBoysNameBtn.addEventListener('click', () =>{
     let randomBName = boysNames[Math.floor(Math.random() * boysNames.length)];
     randomBoysName.innerHTML = randomBName;
 })
+
+// Random
+
+const randomName = document.getElementById('randomName');
+const randomNameBtn = document.getElementById('randomNameBtn');
+const mixArrays = boysNames.concat(girlsNames);
+let randomMixName = mixArrays[Math.floor(Math.random() * mixArrays.length)];
+
+randomName.innerHTML = randomMixName;
+
+randomNameBtn.addEventListener('click', () =>{
+    let randomMixName = mixArrays[Math.floor(Math.random() * mixArrays.length)];
+    randomName.innerHTML = randomMixName;
+})
