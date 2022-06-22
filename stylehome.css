@@ -93,10 +93,13 @@ aside a {
 
 .section__table {
 	width: 45%;
+	height: auto;
 }
 
 .table__item {
+	width: 35%;
 	padding: 5px;
+	/*border: 1px solid black;*/
 }
 
 .table__item__g {
