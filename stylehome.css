@@ -11,6 +11,7 @@
 :root {
 	--prime-color: #003885;
 	--prime-colorG: #ff69b4;
+	--prime-shadow: 6px 6px 6px;
 }
 
 .header {
@@ -98,6 +99,14 @@ aside a {
 	padding: 5px;
 }
 
-p {
-	text-indent: 20px;
+.table__item__g {
+	color: var(--prime-colorG);
+}
+
+.table__item__b {
+	color: var(--prime-color);
+}
+
+.table__item__r {
+	color: black;
 }
