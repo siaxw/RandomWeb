@@ -29,6 +29,7 @@
 		></script>
 		<title>Power of names</title>
 		<link rel="stylesheet" href="/stylehome.css" />
+		<link rel="stylesheet" href="/inputstylecss.css" />
 	</head>
 	<body>
 		<header class="header">
@@ -80,7 +81,6 @@
 				</aside>
 			</section>
 			<section class="main__section">
-				<!-- Table test-->
 				<table class="section__table">
 					<tr>
 						<td class="table__item table__item__g">Girl's name:</td>
@@ -119,6 +119,51 @@
 					Choose Girl or Boy, select how long you would like the name to be,
 					choose an initial and then click &quot;Find name&quot;
 				</p>
+			</section>
+			<section class="main__section">
+				<table>
+					<tr>
+						<td>Select:</td>
+						<td>
+							<input
+								class="gender"
+								id="girlRadio"
+								type="radio"
+								value="Girl"
+								name="gender"
+							/>
+							<label for="girlRadio">Girl</label>
+						</td>
+						<td>
+							<input
+								class="gender"
+								id="boyRadio"
+								type="radio"
+								value="Boy"
+								name="gender"
+							/>
+							<label for="boyRadio">Boy</label>
+						</td>
+						<td>
+							<input
+								class="gender"
+								id="anyRadio"
+								type="radio"
+								value="Any"
+								name="gender"
+								checked="checked"
+							/>
+							<label for="anyRadio">Any</label>
+						</td>
+					</tr>
+					<tr>
+						<td>Result:</td>
+						<td><p>Mariable</p></td>
+					</tr>
+					<tr>
+						<td><button id="findnamebtn">Find Name</button></td>
+					</tr>
+				</table>
 			</section>
 		</main>
 		<!-- Test 

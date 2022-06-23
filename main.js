@@ -42,3 +42,9 @@ randomNameBtn.addEventListener('click', () =>{
     let randomMixName = mixArrays[Math.floor(Math.random() * mixArrays.length)];
     randomName.innerHTML = randomMixName;
 })
+
+// Find Name btn
+const findName = document.getElementById('findnamebtn');
+findName.addEventListener('click', () =>{
+    
+})
