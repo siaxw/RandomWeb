@@ -99,7 +99,6 @@ aside a {
 .table__item {
 	width: 35%;
 	padding: 5px;
-	/*border: 1px solid black;*/
 }
 
 .table__item__g {
@@ -162,11 +161,11 @@ aside a {
 	color: black;
 }
 
-input[type="radio"] {
+.gender[type="radio"] {
 	display: none;
 }
 
-label {
+.gender__label {
 	position: relative;
 	color: var(--prime-color);
 	font-family: "Poppins", sans-serif;
@@ -181,7 +180,7 @@ label {
 	user-select: none;
 }
 
-label:before {
+.gender__label:before {
 	content: "";
 	height: 10px;
 	width: 10px;
@@ -190,35 +189,35 @@ label:before {
 	margin-right: 20px;
 }
 
-input[value="Girl"]:checked + label {
+.gender[value="Girl"]:checked + .gender__label {
 	background-color: var(--prime-colorG);
 	color: white;
 	height: 30px;
 }
 
-input[value="Boy"]:checked + label {
+.gender[value="Boy"]:checked + .gender__label {
 	background-color: var(--prime-color);
 	color: white;
 	height: 30px;
 }
 
-input[value="Any"]:checked + label {
+.gender[value="Any"]:checked + .gender__label {
 	background-color: black;
 	color: white;
 	height: 30px;
 }
 
-input[type="radio"]:checked + label:before {
+.gender[type="radio"]:checked + .gender__label:before {
 	height: 10px;
 	width: 10px;
 	border: 5px solid white;
 	background-color: var(--prime-color);
 }
 
-input[value="Girl"]:checked + label:before {
+.gender[value="Girl"]:checked + .gender__label:before {
 	background-color: var(--prime-colorG);
 }
 
-input[value="Any"]:checked + label:before {
+.gender[value="Any"]:checked + .gender__label:before {
 	background-color: black;
 }
