@@ -12,7 +12,6 @@ And here some of my goals:
 ## CSS
 
 - BEM metod
-- Sass
 - floats
 - positioning
 - display
