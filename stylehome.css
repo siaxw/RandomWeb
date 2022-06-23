@@ -11,7 +11,7 @@
 :root {
 	--prime-color: #003885;
 	--prime-colorG: #fa09aa;
-	--prime-shadow: 6px 6px 6px;
+	--btn-font-size: 17px;
 }
 
 .header {
@@ -121,6 +121,7 @@ aside a {
 	border: 1px solid black;
 	border-radius: 15px;
 	color: white;
+	font-size: var(--btn-font-size);
 	transition: 0.2s;
 }
 
@@ -135,6 +136,7 @@ aside a {
 	border: 1px solid white;
 	border-radius: 15px;
 	color: white;
+	font-size: var(--btn-font-size);
 	transition: 0.2s;
 }
 
@@ -149,6 +151,7 @@ aside a {
 	border: 1px solid black;
 	border-radius: 15px;
 	color: white;
+	font-size: var(--btn-font-size);
 	transition: 0.2s;
 }
 
