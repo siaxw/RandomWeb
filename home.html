@@ -6,22 +6,23 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="author" content="Islom Sattorov" />
 		<meta name="description" content="Name search website Power of Names" />
+		<!-- %20 = White Space -->
 		<link
 			rel="apple-touch-icon"
 			sizes="180x180"
-			href="/favicon_io 2/apple-touch-icon.png"
+			href="/favicon_io%202/apple-touch-icon.png"
 		/>
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="32x32"
-			href="/favicon_io 2/favicon-32x32.png"
+			href="/favicon_io%202/favicon-32x32.png"
 		/>
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="16x16"
-			href="/favicon_io 2/favicon-16x16.png"
+			href="/favicon_io%202/favicon-16x16.png"
 		/>
 		<script
 			src="https://kit.fontawesome.com/702807384b.js"
@@ -84,6 +85,7 @@
 			</section>
 			<!--Section /w Random Names and Another btn -->
 			<section class="main__section">
+				<h2>Random Names</h2>
 				<table class="section__table">
 					<tr>
 						<td class="table__item table__item__g">Girl's name:</td>
@@ -125,9 +127,10 @@
 			</section>
 			<!--Name Filter-->
 			<section class="main__section">
+				<h2>Name Filter</h2>
 				<table>
 					<tr>
-						<td>Select:</td>
+						<th>Select:</th>
 						<td>
 							<input
 								class="gender"
@@ -161,11 +164,12 @@
 						</td>
 					</tr>
 					<tr>
-						<td>Result:</td>
+						<th>Result:</th>
 						<td><p>Mariable</p></td>
 					</tr>
 					<tr>
 						<td><button id="findnamebtn">Find Name</button></td>
+						<td style="display: none"></td>
 					</tr>
 				</table>
 			</section>
