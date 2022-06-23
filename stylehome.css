@@ -10,7 +10,7 @@
 
 :root {
 	--prime-color: #003885;
-	--prime-colorG: #fa09aa;
+	--prime-colorG: rgb(248, 145, 162);
 	--btn-font-size: 17px;
 }
 

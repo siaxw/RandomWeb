@@ -7,7 +7,6 @@ const randomGirlsName = document.getElementById('randomNameG');
 const randomGirlsNameBtn = document.getElementById('randomNameGBtn');
 let randomGName = girlsNames[Math.floor(Math.random() * girlsNames.length)];
 
-console.log(randomGName);
 
 randomGirlsName.innerHTML = randomGName;
 
