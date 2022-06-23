@@ -10,7 +10,7 @@
 
 :root {
 	--prime-color: #003885;
-	--prime-colorG: #f72c91;
+	--prime-colorG: #fa09aa;
 	--prime-shadow: 6px 6px 6px;
 }
 
@@ -111,5 +111,47 @@ aside a {
 }
 
 .table__item__r {
+	color: black;
+}
+
+.another__btn__g {
+	width: 140px;
+	height: 25px;
+	background-color: var(--prime-colorG);
+	border: 1px solid black;
+	border-radius: 15px;
+	color: white;
+	transition: 0.2s;
+}
+
+.another__btn__g:active {
+	color: black;
+}
+
+.another__btn__b {
+	width: 140px;
+	height: 25px;
+	background-color: var(--prime-color);
+	border: 1px solid white;
+	border-radius: 15px;
+	color: white;
+	transition: 0.2s;
+}
+
+.another__btn__b:active {
+	color: black;
+}
+
+.another__btn__r {
+	width: 140px;
+	height: 25px;
+	background-color: black;
+	border: 1px solid black;
+	border-radius: 15px;
+	color: white;
+	transition: 0.2s;
+}
+
+.another__btn__r:active {
 	color: black;
 }
