@@ -1,5 +1,5 @@
-import { boysNames } from "./bnames.js";
-import { girlsNames } from "./gnames.js";
+import { boysNames } from "./names/bnames.js";
+import { girlsNames } from "./names/gnames.js";
 
 
 // Girls
