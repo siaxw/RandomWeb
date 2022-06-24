@@ -44,8 +44,9 @@ randomNameBtn.addEventListener('click', () =>{
 
 // Find Name btn
 const findNameBtn = document.querySelector('#findnamebtn');
+//const radioGenderButtons = document.querySelectorAll('input[name="gender"]:checked').value;//
 const radioGenderButtons = document.querySelectorAll('input[name="gender"]');
-const outputRadioGenderBtn = document.querySelector('#outputRadioBtn')
+const outputRadioGenderBtn = document.querySelector('#outputRadioBtn');
 const randomMixNameForRadioOutput = mixArrays[Math.floor(Math.random() * 0.5 * mixArrays.length)]
 
 outputRadioGenderBtn.innerHTML = randomMixNameForRadioOutput;
@@ -56,16 +57,17 @@ findNameBtn.addEventListener('click', () =>{
     const mixName = boysNames.concat(girlsNames);
     const randomMixName = mixName[Math.floor(Math.random() * 0.5 * mixName.length)];
 
-
-
-    for(const radioGenderButton of radioGenderButtons)
-        if(radioGenderButton.checked && radioGenderButton.value == "Girl"){
+    for(const radioGenderButton of radioGenderButtons){
+        if(radioGenderButton.value == "Girl" && radioGenderButton.checked){
             outputRadioGenderBtn.innerHTML = randomGirlsName;
+            outputRadioGenderBtn.style.color = "rgb(248, 145, 162)";
         }else if(radioGenderButton.checked && radioGenderButton.value == "Boy"){
             outputRadioGenderBtn.innerHTML = randomBoysName;
+            outputRadioGenderBtn.style.color = "#003885"
         }else{
             outputRadioGenderBtn.innerHTML = randomMixName;
         }
+    }
     })
 
 /*
