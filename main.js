@@ -35,6 +35,7 @@ const randomNameBtn = document.getElementById('randomNameBtn');
 /*ES5 Version use Array.concat
 const mixArrays = boysNames.concat(girlsNames);
 */
+// ES6 version use destructuring
 const mixArrays = [...boysNames, ...girlsNames];
 let randomMixName = mixArrays[Math.floor(Math.random() * mixArrays.length)];
 
