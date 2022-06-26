@@ -46,7 +46,6 @@ const randomNameBtn = document.getElementById('randomNameBtn');
 function randomMixName(){
     let mixName = [...girlsNames, ...boysNames];
     let randomName = mixName[Math.floor(Math.random() * mixName.length)];
-    console.log(mixName.length);
     return randomName;
 }
 
