@@ -1,52 +1,87 @@
+// Import Arrays with names
 import { boysNames } from "./names/bnames.js";
 import { girlsNames } from "./names/gnames.js";
 
+// GIRLS
+const randomGirlsTdName = document.getElementById('randomNameG');
+const randomGirlsTdNameBtn = document.getElementById('randomNameGBtn');
 
-// Girls
-const randomGirlsName = document.getElementById('randomNameG');
-const randomGirlsNameBtn = document.getElementById('randomNameGBtn');
-let randomGName = girlsNames[Math.floor(Math.random() * girlsNames.length)];
+//Function for Random Girls Name
+function randomGName(){
+    let randomName = girlsNames[Math.floor(Math.random() * 0.5 * girlsNames.length)];
+    return randomName;
+}
 
+// By default output equal to random name from Girl Array
+randomGirlsTdName.innerHTML = randomGName();
 
-randomGirlsName.innerHTML = randomGName;
-
-randomGirlsNameBtn.addEventListener('click', () =>{
-    let randomGName = girlsNames[Math.floor(Math.random() * girlsNames.length)];
-    randomGirlsName.innerHTML = randomGName;
+// Girls Button
+randomGirlsTdNameBtn.addEventListener('click', () =>{
+    randomGirlsTdName.innerHTML = randomGName();
 });
 
+// BOYS
+const randomBoysTdName = document.getElementById('randomNameB');
+const randomBoysTdNameBtn = document.getElementById('randomNameBBtn');
 
-//Boys
-const randomBoysName = document.getElementById('randomNameB');
-const randomBoysNameBtn = document.getElementById('randomNameBBtn');
-let randomBName = boysNames[Math.floor(Math.random() * boysNames.length)];
+// Function for Random Boys Name
+function randomBName(){
+    let randomName = boysNames[Math.floor(Math.random() * 0.5 * boysNames.length)];
+    return randomName;
+}
 
-randomBoysName.innerHTML = randomBName;
+// By Default output equal to random name from Boys Array
+randomBoysTdName.innerHTML = randomBName();
 
-randomBoysNameBtn.addEventListener('click', () =>{
-    let randomBName = boysNames[Math.floor(Math.random() * boysNames.length)];
-    randomBoysName.innerHTML = randomBName;
-});
+// Event listener for boys btn
+randomBoysTdNameBtn.addEventListener('click', () =>{
+    randomBoysTdName.innerHTML = randomBName();
+})
 
-// Random
-
-const randomName = document.getElementById('randomName');
+// RANDOM
+const randomTdName = document.getElementById('randomName');
 const randomNameBtn = document.getElementById('randomNameBtn');
-/*ES5 Version use Array.concat
-const mixArrays = boysNames.concat(girlsNames);
-*/
-// ES6 version use destructuring
-const mixArrays = [...boysNames, ...girlsNames];
-let randomMixName = mixArrays[Math.floor(Math.random() * mixArrays.length)];
 
-randomName.innerHTML = randomMixName;
+// Function for Random Mix Name
+function randomMixName(){
+    let mixName = [...girlsNames, ...boysNames];
+    let randomName = mixName[Math.floor(Math.random() * mixName.length)];
+    return randomName;
+}
 
+// By Default output equal to random name form Mix Name
+randomTdName.innerHTML = randomMixName();
+
+// Event listener for random btn
 randomNameBtn.addEventListener('click', () =>{
-    let randomMixName = mixArrays[Math.floor(Math.random() * mixArrays.length)];
-    randomName.innerHTML = randomMixName;
+    randomTdName.innerHTML = randomMixName();
 });
 
-// Find Name btn
+// FIND NAME BTN
+const findNameBtn = document.querySelector('#findnamebtn');
+const radioGenderButtons = document.querySelectorAll('input[name="gender"]');
+const outputRadioGenderBtn = document.querySelector('#outputRadioBtn');
+const randomMixNameForRadioOutput = randomMixName();
+
+outputRadioGenderBtn.innerHTML = randomMixNameForRadioOutput;
+
+findNameBtn.addEventListener('click', () =>{
+    for(const radioGenderButton of radioGenderButtons){
+        if(radioGenderButton.value == "Girl" && radioGenderButton.checked){
+            outputRadioGenderBtn.innerHTML = randomGName();
+            outputRadioGenderBtn.style.color = "rgb(248, 145, 162)";
+        }else if(radioGenderButton.checked && radioGenderButton.value == "Boy"){
+            outputRadioGenderBtn.innerHTML = randomBName();
+            outputRadioGenderBtn.style.color = "#003885"
+        }else{
+            outputRadioGenderBtn.innerHTML = randomMixName();
+
+        }
+    }
+})
+
+// TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH  
+/*
 const findNameBtn = document.querySelector('#findnamebtn');
 //const radioGenderButtons = document.querySelectorAll('input[name="gender"]:checked').value;//
 const radioGenderButtons = document.querySelectorAll('input[name="gender"]');
@@ -73,7 +108,7 @@ findNameBtn.addEventListener('click', () =>{
         }
     }
     })
-
+*/
 /*
 findNameBtn.addEventListener('click', () =>{
     let selectedGender;
@@ -86,3 +121,7 @@ findNameBtn.addEventListener('click', () =>{
     outputRadioGenderBtn.innerHTML = selectedGender;
 });
 */
+
+
+
+
