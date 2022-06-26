@@ -72,13 +72,13 @@ findNameBtn.addEventListener('click', () =>{
             outputRadioGenderBtn.style.color = "rgb(248, 145, 162)";
         }else if(radioGenderButton.checked && radioGenderButton.value == "Boy"){
             outputRadioGenderBtn.innerHTML = randomBName();
-            outputRadioGenderBtn.style.color = "#003885";
-        }else if(radioGenderButton.checked && radioGenderButton.value == "Any"){
+            outputRadioGenderBtn.style.color = "#003885"
+        }else{
             outputRadioGenderBtn.innerHTML = randomMixName();
-            outputRadioGenderBtn.style.color = "rgb(0,0,0)";
+
         }
     }
-});
+})
 
 // TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH  
 /*
