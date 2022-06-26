@@ -32,7 +32,10 @@ randomBoysNameBtn.addEventListener('click', () =>{
 
 const randomName = document.getElementById('randomName');
 const randomNameBtn = document.getElementById('randomNameBtn');
+/*ES5 Version use Array.concat
 const mixArrays = boysNames.concat(girlsNames);
+*/
+const mixArrays = [...boysNames, ...girlsNames];
 let randomMixName = mixArrays[Math.floor(Math.random() * mixArrays.length)];
 
 randomName.innerHTML = randomMixName;
