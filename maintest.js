@@ -3,47 +3,40 @@ import { boysNames } from "./names/bnames.js";
 import { girlsNames } from "./names/gnames.js";
 
 // GIRLS
-let randomGirlsNameTd, randomGirlsNameTdBtn, randomizerGirlsNames;
-randomGirlsNamesTd = document.getElementById('randomNameG');
-randomGirlsNamesTdBtn = document.getElementById('randomNameGBtn');
-randomizerGirlsNames = girlsNames[Math.floor(Math.random() * girlsNames.length)];
+const randomGirlsTdName = document.getElementById('randomNameG');
+const randomGirlsTdNameBtn = document.getElementById('randomNameGBtn');
 
-randomGirlsNameTd.innerHTML = randomizerGirlsNames;
+//Function for Random Girls Name
+function randomGName(){
+    let randomName = girlsNames[Math.floor(Math.random() * 0.5 * girlsNames.length)];
+    return randomName;
+}
 
-randomGirlsNameTdBtn.addEventListener('click', () =>{
-    let randomizer = girlsNames[Math.floor(Math.random() * girlsNames.length)]
-    randomGirlsNameTd.innerHTML = randomizer;
+// By default output equal to random name from Girl Array
+randomGirlsTdName.innerHTML = randomGName();
+
+// Girls Button
+randomGirlsTdNameBtn.addEventListener('click', () =>{
+    randomGirlsTdName.innerHTML = randomGName();
 });
 
 // BOYS
-let randomBoysNameTd, randomBoysNameTdBtn, randomizerBoysNames;
-randomBoysNameTd = document.getElementById('randomNameB');
-randomBoysNameTdBtn = document.getElementById('randomNameBBtn');
-randomizerBoysName = boysName[Math.floor(Math.random() * boysName.length)];
+const randomBoysTdName = document.getElementById('randomNameB');
+const randomBoysTdNameBtn = document.getElementById('randomNameBBtn');
+
+// Function for Random Boys Name
+function randomBName(){
+    let randomName = boysNames[Math.floor(Math.random() * 0.5 * boysNames.length)];
+    return randomName;
+}
+
+// By Default output equal to random name from Boys Array
+randomBoysTdName.innerHTML = randomBName();
+
+// Event listener for boys btn
+randomBoysTdNameBtn.addEventListener('click', () =>{
+    randomBoysTdName.innerHTML = randomBName();
+})
 
 // RANDOM
-let randomNameTd, randomNameTdBtn, randomMixArray, randomizerRandomNames;
-randomNameTd = document.getElementById('randomName');
-randomNameTdBtn = document.getElementById('randomNameBtn');
-// Es6 destructuring 
-randomMixArray = [...girlsNames, ...boysNames];
-// multiple to 0.5 give us absolute random
-randomizerRandomNames = randomMixArray[Math.floor(Math.random() * 0.5 * randomMixArray.length)];
-
-// By default output will be random name from Name Arrays
-
-randomBoysNameTd.innerHTML = randomizerBoysNames;
-randomNameTd.innerHTML = randomizerRandomNames;
-
-// Buttons for G, B & R
-
-
-randomBoysNameTdBtn.addEventListener('click', () =>{
-    randomBoysNameTd.innerHTML = randomizerBoysNames;
-});
-
-randomNameTdBtn.addEventListener('click', () =>{
-    randomNameTd.innerHTML = randomizerRandomNames;
-});
-
 
