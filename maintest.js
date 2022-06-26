@@ -39,4 +39,24 @@ randomBoysTdNameBtn.addEventListener('click', () =>{
 })
 
 // RANDOM
+const randomTdName = document.getElementById('randomName');
+const randomNameBtn = document.getElementById('randomNameBtn');
+
+// Function for Random Mix Name
+function randomMixName(){
+    let mixName = [...girlsNames, ...boysNames];
+    let randomName = mixName[Math.floor(Math.random() * mixName.length)];
+    console.log(mixName.length);
+    return randomName;
+}
+
+// By Default output equal to random name form Mix Name
+randomTdName.innerHTML = randomMixName();
+
+// Event listener for random btn
+randomNameBtn.addEventListener('click', () =>{
+    randomTdName.innerHTML = randomMixName();
+});
+
+
 
