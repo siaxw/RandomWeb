@@ -2,6 +2,14 @@
 import { boysNames } from "./names/bnames.js";
 import { girlsNames } from "./names/gnames.js";
 
+// Search submit btn
+const searchSubmitBtn = document.getElementById('searchSubmit');
+const searchInputPlaceholder = document.getElementById('searchInput');
+
+searchSubmitBtn.addEventListener('click', () =>{
+    searchInputPlaceholder.style.display = "inline-block";
+});
+
 // GIRLS
 const randomGirlsTdName = document.getElementById('randomNameG');
 const randomGirlsTdNameBtn = document.getElementById('randomNameGBtn');
