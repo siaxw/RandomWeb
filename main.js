@@ -2,7 +2,7 @@
 import { boysNames } from "./names/bnames.js";
 import { girlsNames } from "./names/gnames.js";
 
-// Search submit btn
+// Search submit btn show
 const searchSubmitBtn = document.getElementById('searchSubmit');
 const searchInputPlaceholder = document.getElementById('searchInput');
 
@@ -71,6 +71,9 @@ const radioGenderButtons = document.querySelectorAll('input[name="gender"]');
 const outputRadioGenderBtn = document.querySelector('#outputRadioBtn');
 const randomMixNameForRadioOutput = randomMixName();
 
+// Length Select
+const selectLength13 = document.getElementById('selectLength');
+
 outputRadioGenderBtn.innerHTML = randomMixNameForRadioOutput;
 
 findNameBtn.addEventListener('click', () =>{
@@ -81,12 +84,14 @@ findNameBtn.addEventListener('click', () =>{
         }else if(radioGenderButton.checked && radioGenderButton.value == "Boy"){
             outputRadioGenderBtn.innerHTML = randomBName();
             outputRadioGenderBtn.style.color = "#003885"
-        }else{
+        }else if(radioGenderButton.checked && radioGenderButton.value == "Any"){
             outputRadioGenderBtn.innerHTML = randomMixName();
-
+            outputRadioGenderBtn.style.color = "rgb(0,0,0)";
         }
     }
 })
+
+
 
 // TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH  
 /*
